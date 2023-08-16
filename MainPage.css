@@ -264,10 +264,19 @@ hr {
   gap: 20px 30px;
 }
 
-.pizza__grid-item{
+.pizza__grid-item {
   margin-bottom: 40px;
+  border-radius: 20px;
+  padding: 13px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+
+  transform: none;
+  transition: all .3s;
 }
 
+.pizza__grid-item:hover {
+  transform: scale(1.05);
+}
 
 .item-img {
   display: flex;
@@ -325,9 +334,6 @@ hr {
 
 
 
-.footer__pizza{
-  margin-top: 20px;
-}
 
 .bg-gray {
   background: #333;
@@ -339,7 +345,7 @@ hr {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px 60px;
   margin-bottom: 20px;
-  padding: 12px 0 12px 0;
+  padding: 20px 0 12px 0;
 }
 
 .footer__info {
@@ -359,8 +365,8 @@ hr {
 }
 
 .footer__info-item>a:hover {
-  color: #efefef;
-  border-bottom: 1px solid #efefef;
+  color: #66c05d;
+  border-bottom: 1px solid #66c05d;
 }
 
 
@@ -382,11 +388,19 @@ hr {
   margin-right: 12px;
 }
 
-.address-email{
+.address-email {
   color: #a7a7a7;
 }
 
-.footer__year{
+.address-email>p {
+  cursor: pointer;
+}
+
+.address-email>p:active {
+  color: #66c05d;
+}
+
+.footer__year {
   display: flex;
   justify-content: flex-start;
   align-items: center;

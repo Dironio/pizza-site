@@ -14,3 +14,11 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+
+  const clipEmail = document.getElementById("zittoEmail")
+
+  clipEmail.onclick = function() {
+    navigator.clipboard.writeText('zittopizza@address.com')
+  }

@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 <!-- 1. сделать возвращение наверх -->
-<!-- 2. сделать работу с таблицами в футере -->
-
-
 
 
 <head>
     <meta charset="UTF-8">
-    <!-- внизу -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="pizza" content="width=device-width, initial-scale=1.0">
-    <!-- описание страницы -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="MainPage.css">
-
     <title>ZittoPizza</title>
 </head>
 
@@ -63,7 +57,7 @@
                 <div class="wrapper">
                     <div class="header-bottom">
                         <ul class="navig">
-                            <li><a href="#">Пицца</a></li>
+                            <li><a href="#pizza-section">Пицца</a></li>
                             <li><a href="#">Комбо</a></li>
                             <li><a href="#">Закуски</a></li>
                             <li><a href="#">Десерты</a></li>
@@ -102,10 +96,10 @@
     </section>
 
     <main>
-        <section class="section-pizza">
-            <div class="wrapper">
-                <div class="bg-white-grid">
-                    <h2 class="grid-title-pizza">Пицца (Переделать поломалось)</h2>
+        <section class="section-pizza" id="pizza-section">
+            <div class="bg-white">
+                <div class="wrapper">
+                    <h2 class="grid-title-pizza">Пицца</h2>
                     <div class="grid">
 
                         <div class="grid-item">
@@ -198,9 +192,9 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="footer__pizza">
 
-        <div class="bg-white">
+        <div class="bg-gray">
             <div class="wrapper">
                 <div class="footer__grid">
                     <div class="footer__grid-info">

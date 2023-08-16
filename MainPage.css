@@ -18,8 +18,8 @@ body {
   background-color: #efefef;
   color: #333;
   min-height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  /* display: grid;
+  grid-template-rows: auto 1fr auto; */
 }
 
 a {
@@ -258,14 +258,18 @@ hr {
 
 
 
-.grid {
+.pizza__grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px 30px;
 }
 
+.pizza__grid-item{
+  margin-bottom: 40px;
+}
 
-.thumb {
+
+.item-img {
   display: flex;
   justify-items: center;
   width: 120px;
@@ -273,36 +277,38 @@ hr {
   margin-bottom: 20px;
 }
 
-.grid-title-pizza {
+.pizza__grid-title {
+  grid-column: span 5;
+
+
   font-size: 24px;
   line-height: 20px;
   font-weight: 700;
   padding: 20px 0;
-  margin-bottom: 40px;
 }
 
-.grid-title {
+.item-title {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.grid-description {
+.item-description {
   display: inline-block;
   margin-bottom: 20px;
   width: 100%;
   font-size: 16px;
 }
 
-.grid-footer {
+.item-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-right: 12px;
 }
 
-.grid-btn {
+.item-btn {
   border-radius: 30px;
   color: #333;
   border: 2px solid #66c05d;
@@ -312,7 +318,7 @@ hr {
   cursor: pointer;
 }
 
-.grid-btn:hover {
+.item-btn:hover {
   background-color: #66c05d;
   color: #fff;
 }
@@ -331,7 +337,7 @@ hr {
 .footer__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px 30px;
+  gap: 20px 60px;
   margin-bottom: 20px;
   padding: 12px 0 12px 0;
 }
